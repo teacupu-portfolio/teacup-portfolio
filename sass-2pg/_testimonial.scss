@@ -1,0 +1,85 @@
+.slideshow-container {
+
+    position: relative;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .mySlides {
+        display: none;
+
+        .fade-testimonial {
+            animation-name: fade-testimonial;
+            animation-duration: 1.5s;
+
+            @-webkit-keyframes fade-testimonial {
+                from {
+                    opacity: 0.4
+                }
+
+                to {
+                    opacity: 1
+                }
+            }
+
+            @keyframes fade-testimonial {
+                from {
+                    opacity: 0.4
+                }
+
+                to {
+                    opacity: 1
+                }
+            }
+        }
+
+        .box-testimonial {
+            height: 250px;
+            width: 600px;
+            background-color: #0d0d0d;
+            display: flex;
+            align-items: center;
+            padding: 30px 60px;
+            border-radius: 10px;
+            box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+
+            .slideshow-testimonial {
+                height: 150px;
+                border: 2px solid white;
+                border-radius: 500px;
+                padding: 10px;
+
+            }
+
+            .text-testimonial {
+                color: #f2f2f2;
+                font-size: 20px;
+                width: 80%;
+                text-align: center;
+                margin-left: 10px;
+            }
+        }
+    }
+
+}
+
+.dots-testimonial {
+    display: flex;
+    margin-top: 25px;
+
+    .dot-testimonial {
+        height: 15px;
+        width: 15px;
+        margin: 0 4px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .active {
+        background-color: #717171;
+    }
+}

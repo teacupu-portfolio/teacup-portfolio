@@ -1,0 +1,18 @@
+.animation-img {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 30px;
+
+    .scrollme {
+        img {
+            height: 700px;
+            margin: 30px;
+            box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.5);
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+}

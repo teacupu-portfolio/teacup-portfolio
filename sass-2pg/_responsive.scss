@@ -1,0 +1,49 @@
+/* On smaller screens, decrease text size */
+@media screen and (max-width: 600px) {
+    .hero-img {
+        flex-direction: column;
+
+        img {
+            height: 300px;
+            width: 100%;
+        }
+    }
+
+    .services-container {
+        .services {
+            flex-direction: column;
+        }
+    }
+
+    .animation-img {
+
+        .scrollme {
+            img {
+                height: 400px;
+                margin: 10px;
+            }
+        }
+    }
+
+    .slideshow-container {
+        width: auto;
+
+        .mySlides {
+            .box-testimonial {
+                width: 400px;
+
+                .slideshow-testimonial {
+                    height: 100px;
+                }
+
+                .text-testimonial {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    .grid-container {
+        grid-template-columns: auto;
+    }
+}

@@ -1,0 +1,26 @@
+.align {
+  display: flex;
+  align-items: center;
+
+  .stat-wrap {
+    background-color: #5dbd80;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    width: 100%;
+    div {
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      .stat-number {
+        display: block;
+        font-size: 35px;
+        font-weight: bold;
+        color: black;
+      }
+    }
+  }
+}

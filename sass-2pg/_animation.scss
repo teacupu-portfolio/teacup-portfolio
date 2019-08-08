@@ -1,0 +1,31 @@
+.animation-tea-mug {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .box-abur {
+    img {
+      height: 100px;
+      animation: drop 3s ease-in-out infinite alternate;
+      position: relative;
+      top: 80px;
+      .steam {
+        @keyframes drop {
+          0% {
+            opacity: 0;
+            transform: translateY(-10px);
+          }
+          100% {
+            opacity: 1;
+            transform: translateY(-50px);
+          }
+        }
+      }
+    }
+  }
+  .box-img {
+    img {
+      height: 140px;
+    }
+  }
+}

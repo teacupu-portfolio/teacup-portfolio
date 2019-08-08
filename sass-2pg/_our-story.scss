@@ -1,0 +1,20 @@
+.our-story {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .story {
+        margin-top: 20px;
+        width: 50%;
+
+        h1,
+        p {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 46px;
+        }
+    }
+}

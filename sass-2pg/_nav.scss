@@ -1,0 +1,66 @@
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: transparent;
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #cadeef;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: black;
+      display: block;
+      transition: color 0.35s linear;
+      &:hover {
+        color: #0784b5;
+      }
+    }
+    .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+  }
+  @media screen and (max-height: 450px) {
+    .sidenav {
+      padding-top: 15px;
+    }
+    .sidenav a {
+      font-size: 18px;
+    }
+  }
+  .hamburger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span {
+      font-size: 45px;
+      cursor: pointer;
+      padding: 10px;
+      animation: scale 5s ease infinite;
+      @keyframes scale {
+        0% {
+          opacity: 0;
+          transform: scale(1.5);
+        }
+        100% {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+    }
+  }
+}
